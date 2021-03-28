@@ -1553,6 +1553,11 @@ vuex@^4.0.0:
   resolved "https://registry.npm.taobao.org/vuex/download/vuex-4.0.0.tgz#ac877aa76a9c45368c979471e461b520d38e6cf5"
   integrity sha1-rId6p2qcRTaMl5Rx5GG1INOObPU=
 
+weixin-js-sdk@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.npm.taobao.org/weixin-js-sdk/download/weixin-js-sdk-1.6.0.tgz#ff50484d8118ce1208f11248cf4a1c0831577514"
+  integrity sha1-/1BITYEYzhII8RJIz0ocCDFXdRQ=
+
 which@^2.0.1:
   version "2.0.2"
   resolved "https://registry.npm.taobao.org/which/download/which-2.0.2.tgz#7c6a8dd0a636a0327e10b59c9286eee93f3f51b1"

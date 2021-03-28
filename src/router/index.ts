@@ -1,7 +1,7 @@
 /*
  * @Author: Li-HONGYAO
  * @Date: 2021-03-26 23:20:41
- * @LastEditTime: 2021-03-27 23:13:50
+ * @LastEditTime: 2021-03-28 08:43:44
  * @LastEditors: Li-HONGYAO
  * @Description:
  * @FilePath: /vue-mp-template/src/router/index.ts
@@ -15,7 +15,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: "/auth/:type/:state?",
-    name: "Authorization",
+    name: "authorization",
     component: () => import("pages/Authorization/Authorization.vue"),
   },
   {
@@ -62,6 +62,11 @@ const routes: Array<RouteRecordRaw> = [
       showTabBar: true,
       title: "我的",
     },
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "not-found",
+    component: () => import("pages/404/404.vue"),
   },
 ];
 

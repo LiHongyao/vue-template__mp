@@ -15,7 +15,8 @@
     "vant": "^3.0.10",
     "vue": "^3.0.5",
     "vue-router": "^4.0.5",
-    "vuex": "^4.0.0"
+    "vuex": "^4.0.0",
+    "weixin-js-sdk": "^1.6.0"
   },
   "devDependencies": {
     "@types/node": "^14.14.36",
