@@ -1,19 +1,22 @@
 /*
  * @Author: Li-HONGYAO
  * @Date: 2021-03-26 22:43:41
- * @LastEditTime: 2021-03-27 23:06:11
+ * @LastEditTime: 2021-03-29 17:43:46
  * @LastEditors: Li-HONGYAO
  * @Description:
- * @FilePath: /vue-mp-template/src/main.ts
+ * @FilePath: \vue-template__mp\src\main.ts
  */
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from './store';
 import vant from 'vant';
-import "./util/rem";
+import setRem from "./util/rem";
 import "vant/lib/index.css";
 import "./index.less";
+
+// 移动端适配
+setRem();
 
 // App配置/挂载相关
 // 1. 创建App
