@@ -1,15 +1,20 @@
 <!--
  * @Author: Li-HONGYAO
  * @Date: 2021-03-26 22:43:41
- * @LastEditTime: 2021-03-27 18:16:53
+ * @LastEditTime: 2021-03-29 17:31:18
  * @LastEditors: Li-HONGYAO
  * @Description: 
- * @FilePath: /vue-mp-template/src/App.vue
+ * @FilePath: \vue-template__mp\src\App.vue
 -->
 <template>
   <!-- 微信环境 -->
   <template v-if="isWeixin">
-    <router-view />
+    <template v-if="$route.meta.keepAlive">
+      <keep-alive>
+        <router-view />
+      </keep-alive>
+    </template>
+    <router-view v-else/>
     <tab-bar v-if="$route.meta.showTabBar" />
   </template>
   <!-- 浏览器环境 -->
